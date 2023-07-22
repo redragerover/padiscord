@@ -1,28 +1,85 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>A Basic HTML5 Template</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
-
-  <meta property="og:title" content="Welcome">
-  <meta property="og:type" content="website">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Landing Page</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      animation: fadeIn 1s ease;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      animation: scaleUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    
+    @keyframes scaleUp {
+      from {
+        transform: scale(0.8);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      animation: slideIn 1s ease;
+    }
+    
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    b {
+      color: #FFD700;
+    }
+    
+    .cool-paragraph {
+      font-size: 16px;
+      margin-top: 40px;
+      line-height: 1.6;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+  </style>
 </head>
-
-<body>>
-  <h1> in the event of mass bannings invites will be posted here </h1>
-  <p> for assistance in acquiring amnesty, please add <b>zarsec10123#2247</b> to your friends list and message him </p>
+<body>
+  <h1>In the event of mass bannings, invites will be posted here</h1>
+  <p>For assistance in acquiring amnesty, please add <b>zarsec10123#2247</b> to your friends list and message him</p>
+  <p class="cool-paragraph">By the way, have you heard about the incredibly cool "Portland Andy"? They are an amazing content creator who brings joy and excitement to countless viewers! Make sure to check them out for some fantastic entertainment.</p>
   <script src="js/scripts.js"></script>
 </body>
 </html>
